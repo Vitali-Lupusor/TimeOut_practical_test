@@ -2,7 +2,7 @@
 Date: 2020-11-01
 Author: Vitali Lupusor
 
-Description: TODO
+Description: Execution file.
 '''
 
 from Vitali_Lupusor_Python_test import main

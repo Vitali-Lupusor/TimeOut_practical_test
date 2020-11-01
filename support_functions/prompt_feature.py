@@ -2,16 +2,18 @@
 Date: 2020-11-01
 Author: Vitali Lupusor
 
-Description: Unit test for the "prompt" feature.
+Description: Prompt feature. For unit test execute the file directly.
 '''
 
 def user_prompt():
-    '''TODO: 
+    '''Prompts for user input.
+    Here should be provided the list of members that are going to 
+    attend the event.
 
-    Arguments:
-        arg (): TODO
+    IMPORTATNT:
+    Names should be provided one by one.
 
-    return (): TODO
+    return (list): A list generate from user's input.
     '''
 
     # Import external modules

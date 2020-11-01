@@ -2,7 +2,7 @@
 Date: 2020-11-01
 Author: Vitali Lupusor
 
-Description: TODO
+Description: Web-scraping feature. For unit test execute the file directly.
 '''
 
 def scrap_json(url):
