@@ -49,7 +49,7 @@ def main():
     )
 
     # Prompt for a list of attendees
-    attendees = user_prompt()
+    attendees = user_prompt(users=users)
 
     if not attendees:
         return (
@@ -83,20 +83,20 @@ def main():
             ]
             if not would_eat:
                 if venue['name'] not in output['places_to_avoid'].keys():
-                    output['places_to_avoid'][venue['name']] = {
-                        'reason': [f'There is nothing for {attendee} to eat.']
-                    }
+                    output['places_to_avoid'][venue['name']] = [
+                        f'There is nothing for {attendee} to eat.'
+                    ]
                 else:
-                    output['places_to_avoid'][venue['name']]['reason'].append(
+                    output['places_to_avoid'][venue['name']].append(
                         f'There is nothing for {attendee} to eat.'
                     )
             if not would_drink:
                 if venue['name'] not in output['places_to_avoid'].keys():
-                    output['places_to_avoid'][venue['name']] = {
-                        'reason': [f'There is nothing for {attendee} to drink.']
-                    }
+                    output['places_to_avoid'][venue['name']] = [
+                        f'There is nothing for {attendee} to drink.'
+                    ]
                 else:
-                    output['places_to_avoid'][venue['name']]['reason'].append(
+                    output['places_to_avoid'][venue['name']].append(
                         f'There is nothing for {attendee} to drink.'
                     )
 

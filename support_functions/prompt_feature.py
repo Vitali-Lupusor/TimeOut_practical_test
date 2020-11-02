@@ -5,13 +5,17 @@ Author: Vitali Lupusor
 Description: Prompt feature. For unit test execute the file directly.
 '''
 
-def user_prompt():
+def user_prompt(users):
     '''Prompts for user input.
     Here should be provided the list of members that are going to 
     attend the event.
 
     IMPORTATNT:
     Names should be provided one by one.
+
+    Arguments:
+        users (dict): The the full list of users and their food 
+            drinks preferences.
 
     return (list): A list generate from user's input.
     '''
@@ -133,6 +137,6 @@ if __name__ == '__main__':
         }
     ]
 
-    attendees = user_prompt()
+    attendees = user_prompt(users=users)
 
     print(attendees)
